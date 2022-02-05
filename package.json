@@ -1,0 +1,31 @@
+{
+  "name": "@xata.io/screenshot",
+  "version": "1.0.0",
+  "description": "A zero-dependency browser-native way to take screenshots powered by the native web MediaDevices API.",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xataio/screenshot"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "run-s build:*",
+    "build:clean": "rm -rf dist",
+    "build:bundle": "rollup -c rollup.config.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "Tejas Kumar <tejas@xata.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^2.67.0",
+    "typescript": "^4.6.0-dev.20220205"
+  }
+}
