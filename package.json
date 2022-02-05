@@ -1,6 +1,6 @@
 {
   "name": "@xata.io/screenshot",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "A zero-dependency browser-native way to take screenshots powered by the native web MediaDevices API.",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -12,7 +12,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "run-s build:*",
     "build:clean": "rm -rf dist",
-    "build:bundle": "rollup -c rollup.config.ts"
+    "build:bundle": "rollup -c rollup.config.ts",
+    "prepublish": "npm run build"
   },
   "files": [
     "dist"
