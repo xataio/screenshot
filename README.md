@@ -1,4 +1,4 @@
-# ![logo](/assets/logo.png) `@xata.io/screenshot`
+# <img alt="Logo" width="56" src="assets/logo.png" /> `@xata.io/screenshot`
 
 This tool uses [native browser APIs](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices) to take screenshots of a given web page, tab, window, or the user's entire screen.
 
