@@ -27,6 +27,12 @@ type Options = {
    * @default image/jpeg
    */
   type?: "image/jpeg" | "image/png";
+
+  /**
+   * Why not play a little audio camera click sound effect when your screenshot is being taken?
+   * @optional
+   */
+  soundEffectUrl?: string;
 };
 
 /**
@@ -37,7 +43,9 @@ export const takeScreenshot = async ({
   onCaptureStart,
   quality = 0.7,
   type = "image/jpeg",
+  soundEffectUrl,
 }: Options = {}) => {
+  await onCaptureStart?.();
   return navigator.mediaDevices
     .getDisplayMedia({
       // This is actually supported, but only in Chrome so not yet part of the TS typedefs, so
@@ -47,8 +55,6 @@ export const takeScreenshot = async ({
     })
     .then(waitForFocus) // We can only proceed if our tab is in focus.
     .then(async (result) => {
-      await onCaptureStart?.();
-
       // So we mount the screen capture to a video element...
       const video = createVideoElementToCaptureFrames(result);
 
@@ -59,7 +65,9 @@ export const takeScreenshot = async ({
       // Hide this modal...
 
       // Play camera click sound, because why not
-      playCameraClickSound();
+      if (soundEffectUrl) {
+        playCameraClickSound(soundEffectUrl);
+      }
 
       // Wait for the video feed...
       await sleep();

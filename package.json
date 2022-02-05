@@ -1,6 +1,6 @@
 {
   "name": "@xata.io/screenshot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A zero-dependency browser-native way to take screenshots powered by the native web MediaDevices API.",
   "main": "dist/index.js",
   "module": "dist/index.js",

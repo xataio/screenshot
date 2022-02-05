@@ -1,7 +1,7 @@
-export const playCameraClickSound = () => {
+export const playCameraClickSound = (url: string) => {
   const audio = document.createElement("audio");
   audio.loop = false;
-  audio.src = "/sounds/screenshot.mp3";
+  audio.src = url;
   audio.play();
   audio.remove();
 };
