@@ -18,7 +18,13 @@
   "files": [
     "dist"
   ],
-  "keywords": [],
+  "keywords": [
+    "screenshot",
+    "feedback",
+    "screen capture",
+    "mediadevices",
+    "getdisplaymedia"
+  ],
   "author": "Tejas Kumar <tejas@xata.io>",
   "license": "MIT",
   "devDependencies": {
