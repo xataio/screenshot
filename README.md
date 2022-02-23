@@ -7,7 +7,7 @@ This tool uses [native browser APIs](https://developer.mozilla.org/en-US/docs/We
 Pick your preference. You can easily learn about this project in the following ways:
 
 - Watch an explainer on [YouTube](https://www.youtube.com/watch?v=uC6RbWanoy4).
-- See it in action on [StackBlitz](https://stackblitz.com/edit/node-b86qqd?file=app/routes/index.tsx).
+- See it in action on [StackBlitz](https://stackblitz.com/edit/node-b86qqd?file=app/routes/index.tsx). You'll need to open the preview in a new window to get around extra iframe security that StackBlitz needs. 
 - Read about the details on the [Xata Blog](https://xata.io/blog/introducing-screenshot/).
 
 ## Usage
