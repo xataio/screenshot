@@ -26,7 +26,7 @@ type Options = {
    * What format of image would you like?
    * @default image/jpeg
    */
-  type?: "image/jpeg" | "image/png";
+  type?: "image/jpeg" | "image/png" | "image/webp";
 
   /**
    * Why not play a little audio camera click sound effect when your screenshot is being taken?

@@ -47,7 +47,7 @@ if (checkIfBrowserSupported()) {
 | `quality`        | The quality of the final image on a scale of 0 to 1. 0 is lowest quality, 1 is highest.                               | _nope_   | `.7`           |
 | `onCaptureStart` | An `async` function that does stuff when the capture starts. You'll usually want to hide any modals or anything here. | _nope_   |                |
 | `onCaptureEnd`   | An `async` function that does stuff after capture ends. This is usually when you'll want to clean up.                 | _nope_   |                |
-| `type`           | What kind of image do we want? Possible values are `"image/jpeg"` and `"image/png"`.                                  | _nope_   | `"image/jpeg"` |
+| `type`           | What kind of image do we want? Possible values are `"image/jpeg"`, `"image/png"` and `"image/webp"`.                                  | _nope_   | `"image/jpeg"` |
 | `soundEffectURL` | Why not play a little camera click sound effect when taking a screenshot?                                             | _nope_   | -              |
 
 ## Contributing
